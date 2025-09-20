@@ -125,26 +125,26 @@ Ranking will be based on the ratio of accuracy to total content effect. A higher
 
 ### References
 
-* \[1\] Seals, T. and Shalin, V. (2024). Evaluating the deductive competence of large language models. NAACL 2024.
+Valentino, M., Kim, G., Dalal, D., Zhao, Z., & Freitas, A. (2025). Mitigating Content Effects on Reasoning in Language Models through Fine-Grained Activation Steering. arXiv preprint arXiv:2505.12189. 
 
-* \[2\] Kim, G., Valentino, M. and Freitas, A. (2024). Reasoning circuits in language models: A mechanistic interpretation of syllogistic inference. Findings of ACL 2025.
+Ranaldi, L., Valentino, M., and Freitas, A. (2025). Improving chain-of-thought reasoning via quasi-symbolic abstractions. ACL 2025.
 
-* \[3\] Wysocka, M., Carvalho, D., Wysocki, O., Valentino, M., and Freitas, A. (2024). Syllobio-NLI: Evaluating large language models on biomedical syllogistic reasoning. NAACL 2025.
+Kim, G., Valentino, M. and Freitas, A. (2024). Reasoning circuits in language models: A mechanistic interpretation of syllogistic inference . Findings of ACL 2025.
 
-* \[4\] Ozeki, K., Ando, R., Morishita, T., Abe, H., Mineshima, K., and Okada, M. (2024). Exploring reasoning biases in large language models through syllogism: Insights from the neubaroco dataset. Findings of ACL 2024.
+Wysocka, M., Carvalho, D., Wysocki, O., Valentino, M., and Freitas, A. (2024). Syllobio-NLI: Evaluating large language models on biomedical syllogistic reasoning. NAACL 2025.
 
-* \[5\] Dasgupta, I., Lampinen, A. K., Chan, S. C. Y., Sheahan, H. R., Creswell, A., Kumaran, D., McClelland, J. L., and Hill, F. (2022). Language models show human-like content effects on reasoning tasks. arXiv preprint arXiv:2207.07051.
+Seals, T. and Shalin, V. (2024). Evaluating the deductive competence of large language models. NAACL 2024.
 
-* \[6\] Bertolazzi, L., Gatt, A., and Bernardi, R. (2024). A systematic analysis of large language models as soft reasoners: The case of syllogistic inferences. EMNLP 2024.
+Ozeki, K., Ando, R., Morishita, T., Abe, H., Mineshima, K., and Okada, M. (2024). Exploring reasoning biases in large language models through syllogism: Insights from the neubaroco dataset. Findings of ACL 2024.
 
-* \[7\] Eisape, T., Tessler, M., Dasgupta, I., Sha, F., Steenkiste, S., and Linzen, T. (2024). A systematic comparison of syllogistic reasoning in humans and language models. NAACL 2024.
+Dasgupta, I., Lampinen, A. K., Chan, S. C. Y., Sheahan, H. R., Creswell, A., Kumaran, D., McClelland, J. L., and Hill, F. (2022). Language models show human-like content effects on reasoning tasks. arXiv preprint arXiv:2207.07051.
 
-* \[8\] Quan, X., Valentino, M., Dennis, L., and Freitas, A. (2024). Verification and refinement of natural language explanations through llm-symbolic theorem proving. In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing.
+Bertolazzi, L., Gatt, A., and Bernardi, R. (2024). A systematic analysis of large language models as soft reasoners: The case of syllogistic inferences. EMNLP 2024.
 
-* \[9\] Lyu, Q., Havaldar, S., Stein, A., Zhang, L., Rao, D., Wong, E., Apidianaki, M., and Callison-Burch, C. (2023). Faithful chain-of-thought reasoning. AACL 2023.
+Eisape, T., Tessler, M., Dasgupta, I., Sha, F., Steenkiste, S., and Linzen, T. (2024). A systematic comparison of syllogistic reasoning in humans and language models. NAACL 2024.
 
-* \[10\] Xu, J., Fei, H., Pan, L., Liu, Q., Lee, M., and Hsu, W. (2024). Faithful logical reasoning via symbolic chain-of-thought. arXiv preprint arXiv:2405.18357.
+Quan, X., Valentino, M., Dennis, L., and Freitas, A. (2024). Verification and refinement of natural language explanations through llm-symbolic theorem proving. In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing.
 
-* \[11\] Ranaldi, L., Valentino, M., Polonsky, A., and Freitas, A. (2025). Improving chain-of-thought reasoning via quasi-symbolic abstractions. ACL 2025.
+Lyu, Q., Havaldar, S., Stein, A., Zhang, L., Rao, D., Wong, E., Apidianaki, M., and Callison-Burch, C. (2023). Faithful chain-of-thought reasoning. AACL 2023.
 
-* \[12\] Valentino, M., Kim, G., Dalal, D., Zhao, Z., & Freitas, A. (2025). Mitigating Content Effects on Reasoning in Language Models through Fine-Grained Activation Steering. arXiv preprint arXiv:2505.12189.
+Xu, J., Fei, H., Pan, L., Liu, Q., Lee, M., and Hsu, W. (2024). Faithful logical reasoning via symbolic chain-of-thought. arXiv preprint arXiv:2405.18357.
