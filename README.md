@@ -75,9 +75,9 @@ The training set is exclusively in English to simulate a low-resource setting. A
 
 | Metric | Definition | Purpose |
 | :--- | :--- | :--- |
-| $\text{F1}_{\text{Premises}}$ | Macro-averaged F1-Score for correctly identifying the subset of relevant premises out of all available premises. | Measures the model's ability to filter relevant information. |
-| **Combined Performance** ($\text{Avg}_{\text{EN}}$) | $\text{Avg}(\text{ACC}_{\text{EN}}, \text{F1}_{\text{Premises}})$ | Equates the weight given to the core reasoning task and the retrieval task. |
-| **Primary Ranking Metric** | $$\frac{\text{Avg}_{\text{EN}}}{1 + \ln(1 + \text{TCE}_{\text{EN}})}$$ | **The official ranking metric.** It applies the content bias penalty to the average performance metric. |
+| $\text{F1}$ | Macro-averaged F1-Score for correctly identifying the subset of relevant premises out of all available premises. | Measures the model's ability to filter relevant information. |
+| **Combined Performance** ($\text{Avg}$) | $\text{Avg}(\text{ACC}, \text{F1})$ | Equates the weight given to the core reasoning task and the retrieval task. |
+| **Primary Ranking Metric** | $$\frac{\text{Avg}}{1 + \ln(1 + \text{TCE})}$$ | **The official ranking metric.** It applies the content bias penalty to the average performance metric. |
 
 ---
 
@@ -89,9 +89,9 @@ The training set is exclusively in English to simulate a low-resource setting. A
 
 | Metric | Definition | Purpose |
 | :--- | :--- | :--- |
-| **Multilingual Accuracy ($\text{Acc}_{\text{Multi}}$)** | The average accuracy across all evaluated languages. | Measures average logical competence across languages. |
-| **Multilingual Content Effect** ($\text{TCE}_{\text{Multi}}$) | A composite score that measures content effect within each target language and the difference in TCE between each target language and English (cross-lingual stability penalty). **A lower TCE indicates higher cross-lingual robustness.** | Measures the model's overall susceptibility to content bias and its stability across languages. |
-| **Primary Ranking Metric** | $$\frac{\text{Acc}_{\text{Multi}}}{1 + \ln(1 + \text{TCE}_{\text{Multi}})}$$ | **The official ranking metric.** This metric rewards high average accuracy and smoothly penalizes multilingual content bias, favoring robust models. |
+| **Multilingual Accuracy** ($\text{Acc}$) | The average accuracy across all evaluated languages. | Measures average logical competence across languages. |
+| **Multilingual Content Effect** ($\text{TCE}$) | A composite score that measures content effect within each target language and the difference in TCE between each target language and English (cross-lingual stability penalty). **A lower TCE indicates higher cross-lingual robustness.** | Measures the model's overall susceptibility to content bias and its stability across languages. |
+| **Primary Ranking Metric** | $$\frac{\text{Acc}}{1 + \ln(1 + \text{TCE})}$$ | **The official ranking metric.** This metric rewards high average accuracy and smoothly penalizes multilingual content bias, favoring robust models. |
 
 ---
 
@@ -103,10 +103,10 @@ The training set is exclusively in English to simulate a low-resource setting. A
 
 | Metric | Definition | Purpose |
 | :--- | :--- | :--- |
-| $\text{F1}_{\text{Premises}}$ | Macro-averaged F1-Score for correctly identifying the subset of relevant premises out of all available premises, averaged across all languages. | Measures the model's multilingual ability to filter relevant information. |
-| **Multilingual Combined Performance** ($\text{Avg}_{\text{Multi}}$) | $\text{Avg}(\text{Acc}_{\text{Multi}}, \text{F1}_{\text{Premises}})$ | Equates the weight given to the core reasoning task and the retrieval task, averaged multilngually. |
-| **Multilingual Content Effect** ($\text{TCE}_{\text{Multi}}$) | Same as Subtask 3. | Measures the model's overall susceptibility to content bias and its stability across languages. |
-| **Primary Ranking Metric** | $$\frac{\text{Avg}_{\text{Multi}}}{1 + \ln(1 + \text{TCE}_{\text{Multi}})}$$ | **The official ranking metric.** This metric rewards high average accuracy and smoothly penalizes multilingual content bias, favoring robust models. |
+| $\text{F1}$ | Macro-averaged F1-Score for correctly identifying the subset of relevant premises out of all available premises, averaged across all languages. | Measures the model's multilingual ability to filter relevant information. |
+| **Multilingual Combined Performance** ($\text{Avg}$) | $\text{Avg}(\text{Acc}, \text{F1})$ | Equates the weight given to the core reasoning task and the retrieval task, averaged multilngually. |
+| **Multilingual Content Effect** ($\text{TCE}$) | Same as Subtask 3. | Measures the model's overall susceptibility to content bias and its stability across languages. |
+| **Primary Ranking Metric** | $$\frac{\text{Avg}}{1 + \ln(1 + \text{TCE})}$$ | **The official ranking metric.** This metric rewards high average accuracy and smoothly penalizes multilingual content bias, favoring robust models. |
 
 ---
 
