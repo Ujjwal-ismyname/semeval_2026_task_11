@@ -61,9 +61,9 @@ The training set is exclusively in English to simulate a low-resource setting. A
 
 | Metric | Definition | Purpose |
 | :--- | :--- | :--- |
-| **Overall Accuracy (ACC)** | Percentage of correct validity predictions across all items. | Measures basic logical competence. |
+| **Overall Accuracy** ($\text{ACC}_{\text{EN}}$) | Percentage of correct validity predictions across all items. | Measures basic logical competence. |
 | **Total Content Effect** ($\text{TCE}_{\text{EN}}$) | A composite score measuring the average accuracy difference due to plausibility across all four logical-plausibility conditions in English. **A lower TCE indicates higher logical integrity.** | Measures the model's overall susceptibility to content bias. |
-| **Primary Ranking Metric** | $$\frac{\text{ACC}}{1 + \ln(1 + \text{TCE}_{\text{EN}})}$$ | **The official ranking metric.** This metric rewards high accuracy and smoothly penalizes content bias, favoring models that are both correct and robust. |
+| **Primary Ranking Metric** | $$\frac{\text{ACC}_{\text{EN}}}{1 + \ln(1 + \text{TCE}_{\text{EN}})}$$ | **The official ranking metric.** This metric rewards high accuracy and smoothly penalizes content bias, favoring models that are both correct and robust. |
 
 ---
 
@@ -76,7 +76,7 @@ The training set is exclusively in English to simulate a low-resource setting. A
 | Metric | Definition | Purpose |
 | :--- | :--- | :--- |
 | $\text{F1}_{\text{Premises}}$ | Macro-averaged F1-Score for correctly identifying the subset of relevant premises out of all available premises. | Measures the model's ability to filter relevant information. |
-| **Combined Performance** ($\text{Avg}_{\text{EN}}$) | $\text{Avg}(\text{ACC}, \text{F1}_{\text{Premises}})$ | Equates the weight given to the core reasoning task and the retrieval task. |
+| **Combined Performance** ($\text{Avg}_{\text{EN}}$) | $\text{Avg}(\text{ACC}_{\text{EN}}, \text{F1}_{\text{Premises}})$ | Equates the weight given to the core reasoning task and the retrieval task. |
 | **Primary Ranking Metric** | $$\frac{\text{Avg}_{\text{EN}}}{1 + \ln(1 + \text{TCE}_{\text{EN}})}$$ | **The official ranking metric.** It applies the content bias penalty to the average performance metric. |
 
 ---
@@ -106,7 +106,7 @@ The training set is exclusively in English to simulate a low-resource setting. A
 | $\text{F1}_{\text{Premises}}$ | Macro-averaged F1-Score for correctly identifying the subset of relevant premises out of all available premises, averaged across all languages. | Measures the model's multilingual ability to filter relevant information. |
 | **Multilingual Combined Performance** ($\text{Avg}_{\text{Multi}}$) | $\text{Avg}(\text{Acc}_{\text{Multi}}, \text{F1}_{\text{Premises}})$ | Equates the weight given to the core reasoning task and the retrieval task, averaged multilngually. |
 | **Multilingual Content Effect** ($\text{TCE}_{\text{Multi}}$) | Same as Subtask 3. | Measures the model's overall susceptibility to content bias and its stability across languages. |
-| **Primary Ranking Metric** | $$\frac{\text{Avg}_{\text{Multi}}}{1 + \ln(1 + \text{TCE}_{\text{Multi}})}$
+| **Primary Ranking Metric** | $$\frac{\text{Avg}_{\text{Multi}}}{1 + \ln(1 + \text{TCE}_{\text{Multi}})}$$ | **The official ranking metric.** This metric rewards high average accuracy and smoothly penalizes multilingual content bias, favoring robust models. |
 
 ---
 
