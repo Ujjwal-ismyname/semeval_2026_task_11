@@ -4,6 +4,8 @@ Welcome to the official repository for **SemEval-2026 Task 11: Disentangling Con
 
 Official website: <https://sites.google.com/view/semeval-2026-task-11>
 
+-- 
+
 ### Content Biases in LLMs
 
 A major challenge for Large Language Models (LLMs) is their tendency to confuse formal logical validity with the content of arguments. This phenomenon, known as **content effect**, means LLMs can:
@@ -16,6 +18,7 @@ A major challenge for Large Language Models (LLMs) is their tendency to confuse 
 
 This issue highlights a fundamental problem: the pre-training process inherently entangles reasoning with content, limiting the reliability and application of LLMs in critical real-world scenarios. While various methods have been proposed to address this, a truly effective solution remains elusive, especially across different languages.
 
+-- 
 
 ### A Multilingual Evaluation of Content Effect on Reasoning
 
@@ -25,7 +28,9 @@ To achieve this, we will release a novel, large-scale dataset of syllogistic arg
 
 We encourage participants to explore solutions based on natively multilingual open-source or open-weight models that offer insights into the internal reasoning mechanisms.
 
-###Timeline
+-- 
+
+### Timeline
 
 - Training data ready  (1 September 2025)
 - Evaluation kit release, information on languages, and output formats  (31 October 2025)
