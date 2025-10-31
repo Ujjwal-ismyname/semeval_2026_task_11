@@ -4,7 +4,7 @@ Welcome to the official repository for **SemEval-2026 Task 11: Disentangling Con
 
 Official website: <https://sites.google.com/view/semeval-2026-task-11>
 
--- 
+---
 
 ### Content Biases in LLMs
 
@@ -18,7 +18,7 @@ A major challenge for Large Language Models (LLMs) is their tendency to confuse 
 
 This issue highlights a fundamental problem: the pre-training process inherently entangles reasoning with content, limiting the reliability and application of LLMs in critical real-world scenarios. While various methods have been proposed to address this, a truly effective solution remains elusive, especially across different languages.
 
--- 
+--- 
 
 ### A Multilingual Evaluation of Content Effect on Reasoning
 
@@ -28,7 +28,7 @@ To achieve this, we will release a novel, large-scale dataset of syllogistic arg
 
 We encourage participants to explore solutions based on natively multilingual open-source or open-weight models that offer insights into the internal reasoning mechanisms.
 
--- 
+---
 
 ### Timeline
 
@@ -66,9 +66,11 @@ The training set is exclusively in English to simulate a low-resource setting. A
 * **Note:** The model must correctly predict `validity: false`, ignoring the `plausibility: true` (which is based on world knowledge).
   
  ---
+## Subtasks
+
 In `evaluation_kit`, you can find the Python scrips that will be used to evaluate the systems. The scripts include mock examples to show participants the expected JSON output format. 
 
-## Subtask 1: Syllogistic Reasoning in English (Binary Classification)
+### Subtask 1: Syllogistic Reasoning in English (Binary Classification)
 
 **Goal:** Determine the formal validity of syllogisms in English.
 
@@ -82,7 +84,7 @@ In `evaluation_kit`, you can find the Python scrips that will be used to evaluat
 
 ---
 
-## Subtask 2: Syllogistic Reasoning with Irrelevant Premises in English (Retrieval + Classification)
+### Subtask 2: Syllogistic Reasoning with Irrelevant Premises in English (Retrieval + Classification)
 
 **Goal:** Determine validity while simultaneously identifying and filtering out "noisy" or irrelevant premises in English.
 
@@ -96,7 +98,7 @@ In `evaluation_kit`, you can find the Python scrips that will be used to evaluat
 
 ---
 
-## Subtask 3: Multilingual Syllogistic Reasoning (Multilingual Binary Classification)
+### Subtask 3: Multilingual Syllogistic Reasoning (Multilingual Binary Classification)
 
 **Goal:** Extend binary classification to multiple languages.
 
@@ -110,7 +112,7 @@ In `evaluation_kit`, you can find the Python scrips that will be used to evaluat
 
 ---
 
-## Subtask 4: Multilingual Syllogistic Reasoning with Irrelevant Premises (Multilingual Retrieval + Classification)
+### Subtask 4: Multilingual Syllogistic Reasoning with Irrelevant Premises (Multilingual Retrieval + Classification)
 
 **Goal:** Handle noisy, irrelevant premises in multiple languages.
 
