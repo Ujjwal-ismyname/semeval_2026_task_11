@@ -50,30 +50,8 @@ The training set is exclusively in English to simulate a low-resource setting. A
 ```
 
 * **Note:** The model must correctly predict `validity: false`, ignoring the `plausibility: true` (which is based on world knowledge).
-
----
-
-### Languages
-
-The sutasks will include the following languages:
-
-**Subtask 1 & 3**:
-
-- English (en)
-
-**Subtask 2 & 4**
-
-- German (de)
-- Spanish (es)
-- French (fr)
-- Italian (it)
-- Dutch (nl)
-- Portuguese (pt)
-- Russian (ru)
-- Chinese (zh)
-- Swahili (sw)
-- Bengali (bn)
-- Telugu (te)
+  
+ ---
 
 ## Subtask 1: Syllogistic Reasoning in English (Binary Classification)
 
@@ -129,6 +107,30 @@ The sutasks will include the following languages:
 | **Multilingual Combined Performance** ($\text{Avg}$) | $\text{Avg}(\text{Acc}, \text{F1})$ | Equates the weight given to the core reasoning task and the retrieval task, averaged multilngually. |
 | **Multilingual Content Effect** ($\text{TCE}$) | Same as Subtask 3. | Measures the model's overall susceptibility to content bias and its stability across languages. |
 | **Primary Ranking Metric** | $$\frac{\text{Avg}}{1 + \ln(1 + \text{TCE})}$$ | **The official ranking metric.** This metric rewards high average accuracy and smoothly penalizes multilingual content bias, favoring robust models. |
+
+---
+
+### Languages
+
+The sutasks will include the following languages:
+
+**Subtask 1 & 3**:
+
+- English (en)
+
+**Subtask 2 & 4**
+
+- German (de)
+- Spanish (es)
+- French (fr)
+- Italian (it)
+- Dutch (nl)
+- Portuguese (pt)
+- Russian (ru)
+- Chinese (zh)
+- Swahili (sw)
+- Bengali (bn)
+- Telugu (te)
 
 ---
 
