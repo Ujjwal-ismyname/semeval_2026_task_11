@@ -70,6 +70,8 @@ The training set is exclusively in English to simulate a low-resource setting. A
 
 In `evaluation_kit`, you can find the Python scrips that will be used to evaluate the systems. The scripts include mock examples to show participants the expected JSON output format. 
 
+---
+
 ### Subtask 1: Syllogistic Reasoning in English (Binary Classification)
 
 **Goal:** Determine the formal validity of syllogisms in English.
