@@ -88,9 +88,9 @@ In `evaluation_kit`, you can find the Python scrips that will be used to evaluat
 
 ### Subtask 2: Syllogistic Reasoning with Irrelevant Premises in English (Retrieval + Classification)
 
-**Goal:** Determine validity while simultaneously identifying and filtering out "noisy" or irrelevant premises in English.
+**Goal:** The task is to jointly predict the validity of the syllogism and the set of relevant premises that entail the conclusion.
 
-**Note:**  In this task, the relevant premises is the set of valid statements that are necessary and sufficient to entail the conclusion. This means that only "valid" syllogisms will have relevant premises.
+**Note:**  In this task, the set of relevant premises is the set of statements that are necessary and sufficient to entail the conclusion. This means that **only "valid" syllogisms** will have relevant premises.
 
 ### Subtask 2 Metrics: Retrieval, Validity, and Bias
 
@@ -118,9 +118,9 @@ In `evaluation_kit`, you can find the Python scrips that will be used to evaluat
 
 ### Subtask 4: Multilingual Syllogistic Reasoning with Irrelevant Premises (Multilingual Retrieval + Classification)
 
-**Goal:** Handle noisy, irrelevant premises in multiple languages.
+**Goal:** Handle noisy, irrelevant premises in multiple languages. The task is to jointly predict the validity of the syllogism and the set of relevant premises that entail the conclusion.
 
-**Note:**  In this task, the relevant premises is the set of valid statements that are necessary and sufficient to entail the conclusion. This means that only "valid" syllogisms will have relevant premises.
+**Note:**  In this task, the set of relevant premises is the set of statements that are necessary and sufficient to entail the conclusion. This means that **only "valid" syllogisms** will have relevant premises.
 
 ### Subtask 4 Metrics: Multilingual Retrieval, Validity, and Bias
 
