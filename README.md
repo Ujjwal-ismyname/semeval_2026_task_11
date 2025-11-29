@@ -36,7 +36,7 @@ We encourage participants to explore solutions based on natively multilingual op
 - Evaluation kit release, information on languages, and output formats  (31 October 2025)
 - Evaluation data ready  & Codabench competition (1 December 2025)
 - Practice Phase (10 December 2025 - 31 December 2025)
-- Evaluation Phase (1 January 2026 - 31 January 2026)
+- Evaluation Phase (10 January 2026 - 31 January 2026)
 - Paper submission (February 2026)
 - Notification to authors (March 2026)
 - Camera-ready (April 2026)
