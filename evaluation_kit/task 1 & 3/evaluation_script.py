@@ -215,15 +215,11 @@ def run_full_scoring(reference_data_path: str, prediction_path: str, output_path
 # --- 8. EXECUTION ---
 
 if __name__ == "__main__":
-
-    reference_data_path = 'mock_reference.json'
-    prediction_path = 'mock_predictions_1.json'
-    output_path = 'mock_output_1json'
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--predictions', required=True)
+    parser.add_argument('--reference', required=True)
+    parser.add_argument('--output', default='evaluation_results.json')
+    args = parser.parse_args()
     
-    run_full_scoring(reference_data_path, prediction_path, output_path)
-
-    reference_data_path = 'mock_reference.json'
-    prediction_path = 'mock_predictions_2.json'
-    output_path = 'mock_output_2json'
-
-    run_full_scoring(reference_data_path, prediction_path, output_path)
+    run_full_scoring(args.reference, args.predictions, args.output)
